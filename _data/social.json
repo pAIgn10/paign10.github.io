@@ -1,0 +1,41 @@
+[
+  {
+    "icon": "fa-facebook",
+    "link": "https://www.facebook.com/nick.lamprianidis"
+  },
+  {
+    "icon": "fa-twitter",
+    "link": "https://twitter.com/nlamprian"
+  },
+  {
+    "icon": "fa-google-plus",
+    "link": "https://plus.google.com/u/1/109379247151771147954"
+  },
+  {
+    "icon": "fa-youtube",
+    "link": "https://www.youtube.com/channel/UCD9sOb1yxhIjk2UQsFeTqzw"
+  },
+  {
+    "icon": "fa-linkedin",
+    "link": "https://www.linkedin.com/in/nlamprian/"
+  },
+  {
+    "icon": "fa-github",
+    "link": "https://github.com/nlamprian"
+  },
+  {
+    "img": "/assets/img/site/social/codebender.png",
+    "width": "24px",
+    "link": "https://codebender.cc/user/pAIgn10"
+  },
+  {
+    "img": "/assets/img/site/social/google-play.png",
+    "width": "26px",
+    "link": "https://play.google.com/store/apps/developer?id=Nick%20Lamprianidis&hl=en"
+  },
+  {
+    "img": "/assets/img/site/social/thingiverse.png",
+    "width": "24px",
+    "link": "http://www.thingiverse.com/pAIgn10/designs"
+  }
+]

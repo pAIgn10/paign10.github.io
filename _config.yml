@@ -1,0 +1,25 @@
+# Site settings
+title: nlamprian
+header-img: site/home.jpg
+email: nlamprian@gmail.com
+copyright_name: Nick Lamprianidis
+description: This is Nick's website. Here you can find his portfolio and blog posts on things he tackles on his daily work.
+baseurl: ""
+url: "http://nlamprian.me"
+google_analytics: UA-98317084-1
+disqus_name: nlamprian
+
+# Build settings
+permalink: "/:categories/:title"
+lsi: true
+markdown: kramdown
+# highlighter: rouge
+kramdown:
+  input: GFM 
+  syntax_highlighter: rouge
+permalink: pretty
+paginate: 5
+paginate_path: ":num"
+exclude: ["assets/less", "Gruntfile.js", "package.json", "README.md"]
+
+gems: [jekyll-paginate, jekyll-feed, jekyll-gist, classifier-reborn, rouge, font-awesome-sass]

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+<div class="intro-header" style="background-image: url('{{ site.baseurl }}/assets/img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1 class="animated fadeInUp">{{ page.title }}</h1>
+                    <div class="row"></div>
+                    <span class="subheading animated fadeInUp">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+<hr>

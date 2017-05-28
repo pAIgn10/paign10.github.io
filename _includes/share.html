@@ -1,0 +1,9 @@
+<div class="share-page">
+	<h4>
+		<b>Share:</b>&ensp;
+		<a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}" class="share" onclick="window.open(this.href, '','height=500,width=500');return false;"><i class="fa fa-facebook"></i></a>&ensp;
+		<a href="https://twitter.com/intent/tweet?text={{ page.title }} {{ page.url | prepend: site.url }}" class="share" data-size="large"><i class="fa fa-twitter"></i></a>&ensp;
+		<a href="https://plus.google.com/share?url={{ page.url | prepend: site.url }}" class="share" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"><i class="fa fa-google-plus"></i></a>&ensp;
+		<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ page.url | prepend: site.url }}&amp;title={{ page.title }}&amp;summary={{ page.description }}&amp;source=" class="share" onclick="window.open(this.href, '', 'height=500,width=500'); return false;"><i class="fa fa-linkedin"></i></a>
+	</h4>
+</div>
