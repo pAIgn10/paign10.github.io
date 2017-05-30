@@ -498,3 +498,6 @@ body {
   padding: 50px 0px 0px 0px;
 }
 }
+a img.img-footer {
+  cursor: pointer;
+}
