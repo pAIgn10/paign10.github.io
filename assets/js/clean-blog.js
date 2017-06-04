@@ -4,24 +4,45 @@
  * Licensed under MIT (https://spdx.org/licenses/MIT)
  */
 
+// checks if element has requested class
+function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+}
+
+// returns viewport dimensions
+// https://andylangton.co.uk/blog/development/get-viewportwindow-size-width-and-height-javascript
+function viewport() {
+    var e = window, a = 'inner';
+    if ( !( 'innerWidth' in window ) ) {
+        a = 'client';
+        e = document.documentElement || document.body;
+    }
+    return { width: e[ a+'Width' ], height: e[ a+'Height' ] }
+}
+
 // tooltip init
 $(function() {
     $("[data-toggle='tooltip']").tooltip();
 });
 
-// make all images responsive
+// make images responsive
 $(function() {
-    $("img").addClass("img-responsive");
+    $("img").addClass("img-responsive")
+    // var imgs = document.getElementsByTagName('img');
+    // for (var i = 0; i < imgs.length; i++) {
+    //     if (!hasClass(imgs[i],'img-footer') && !hasClass(imgs[i],'img-portfolio'))
+    //         imgs[i].className += " img-responsive";
+    // }
 });
 
 // responsive tables
-$(document).ready(function() {
+$(function() {
     $("table").wrap("<div class='table-responsive'></div>");
     $("table").addClass("table");
 });
 
 // responsive embed videos
-$(document).ready(function () { 
+$(function () {
     $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
     $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
     $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
@@ -29,7 +50,7 @@ $(document).ready(function () {
 });
 
 // navigation scripts to show header on scroll-up
-jQuery(document).ready(function($) {
+$(function($) {
     var MQL = 1170;
 
     //primary navigation slide-in effect
@@ -57,3 +78,74 @@ jQuery(document).ready(function($) {
             });
     }
 });
+
+// Portfolio
+
+$(function() {
+    if (window.location.href.toString().indexOf('portfolio') !== -1) {
+        document.querySelector('html').setAttribute("style","height:100%");
+        document.querySelector('body').setAttribute("style","min-height:101%");
+    }
+});
+
+// MixItUp
+
+var mixer;
+
+$(function() {
+    var containerEl = document.querySelector('[data-ref~="portfolio-container"]');
+
+    mixer = mixitup(containerEl, {
+        animation: {
+            effects: 'fade scale stagger(40ms)'
+        },
+        load: {
+            filter: 'none'
+        },
+        selectors: {
+            target: '[data-ref~="portfolio-target"]'
+        }
+    });
+
+    containerEl.classList.add('portfolio-target-ready');
+
+    mixer.show()
+        .then(function() {
+            mixer.configure({
+                animation: {
+                    effects: 'fade scale'
+                }
+            });
+        });
+});
+
+function setPortfolioControlsClass() {
+    console.log(viewport());
+    if (viewport().width < 640) {
+        $('#portfolio-controls').removeClass('btn-group');
+        $('#portfolio-controls').addClass('btn-group-vertical');
+    } else {
+        $('#portfolio-controls').removeClass('btn-group-vertical');
+        $('#portfolio-controls').addClass('btn-group');
+    }
+}
+
+$(setPortfolioControlsClass());
+window.onresize = setPortfolioControlsClass;
+
+function sortProjects() {
+    var el = document.querySelector('#portfolio-sort-btn');
+    if (el == null) {
+        console.log("Couldn't find mixer sort btn");
+        return;
+    }
+    if (el.textContent === "Asc") {
+        // el.setAttribute("data-sort","default:desc");
+        mixer.sort('default:desc');
+        el.textContent = "Desc";
+    } else {
+        // el.setAttribute("data-sort","default:asc");
+        mixer.sort('default:Asc');
+        el.textContent = "Asc";
+    }
+};
