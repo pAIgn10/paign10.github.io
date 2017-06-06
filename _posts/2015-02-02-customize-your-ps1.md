@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Customize your PS1"
-subtitle: "Towards a functional command prompt"
+title: Customize your PS1
+subtitle: Towards a functional command prompt
 date: 2015-02-02 00:00:00
-author: "Nick Lamprianidis"
+author: Nick Lamprianidis
 header-img: 2015-02-02-customize-your-ps1/logo.png
 categories: [ blog, software, bash ]
 tags: [ linux, bash, prompt, git ]

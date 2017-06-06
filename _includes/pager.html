@@ -1,0 +1,13 @@
+<!-- Pager -->
+<ul class="pager">
+    {% if page.previous.url %}
+    <li class="previous">
+        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" id="site-btn" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}"><i class="fa fa-arrow-left" aria-hidden="true"></i> Previous {{ include.label }}</a>
+    </li>
+    {% endif %}
+    {% if page.next.url %}
+    <li class="next">
+        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" id="site-btn" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next {{ include.label }} <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    </li>
+    {% endif %}
+</ul>

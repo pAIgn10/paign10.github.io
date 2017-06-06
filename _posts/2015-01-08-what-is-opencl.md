@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "What is OpenCL?"
-subtitle: "From computer architectures to parallel programming"
+title: What is OpenCL?
+subtitle: From computer architectures to parallel programming
 date: 2015-01-08 00:00:00
-author: "Nick Lamprianidis"
+author: Nick Lamprianidis
 header-img: 2015-01-08-what-is-opencl/logo.png
 categories: [ blog, software, parallel, opencl ]
 tags: [ parallel, heterogeneous, opencl, overview ]

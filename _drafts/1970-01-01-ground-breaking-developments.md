@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Ground Breaking Developments"
-subtitle: "They are shaking the foundations of the world"
+title: Ground Breaking Developments
+subtitle: They are shaking the foundations of the world
 date: 1970-01-01 00:00:00
-author: "Nick Lamprianidis"
-header-img: blog/1970-01-01-placeholder/space.jpg
+author: Nick Lamprianidis
+header-img: 1970-01-01-placeholder/space.jpg
 categories: [ blog, robots ]
 tags: [ robots, oblivion ]
 ---

@@ -94,6 +94,7 @@ var mixer;
 
 $(function() {
     var containerEl = document.querySelector('[data-ref~="portfolio-container"]');
+    if (containerEl == null) return;
 
     mixer = mixitup(containerEl, {
         animation: {
@@ -120,7 +121,6 @@ $(function() {
 });
 
 function setPortfolioControlsClass() {
-    console.log(viewport());
     if (viewport().width < 640) {
         $('#portfolio-controls').removeClass('btn-group');
         $('#portfolio-controls').addClass('btn-group-vertical');
@@ -135,10 +135,8 @@ window.onresize = setPortfolioControlsClass;
 
 function sortProjects() {
     var el = document.querySelector('#portfolio-sort-btn');
-    if (el == null) {
-        console.log("Couldn't find mixer sort btn");
-        return;
-    }
+    if (el == null) return;
+
     if (el.textContent === "Asc") {
         // el.setAttribute("data-sort","default:desc");
         mixer.sort('default:desc');

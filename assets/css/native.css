@@ -73,5 +73,9 @@
 .highlight td > pre { margin-bottom: 0px; }
 .highlight code > .table-responsive { border: 0px; margin-bottom: 0px; border-radius: 4px; }
 .highlight .table > tbody > tr > td { border: 0px; }
+.highlight .table > tbody > tr > td:first-of-type { padding: 0px 0px 0px 0px; }
+.highlight .table > tbody > tr > td:last-of-type { padding: 0px 0px 0px 0px; }
 .highlight .table { margin-bottom: 0px; }
-figure.highlight > pre { border-radius: 6px; }
+figure.highlight > pre { border-radius: 6px; padding: 12px 17px 12px 15px; }
+figure.highlight pre { border: 0px; }
+.highlight code.language-text { color: #d0d0d0; }

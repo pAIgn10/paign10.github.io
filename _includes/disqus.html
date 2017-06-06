@@ -1,0 +1,24 @@
+<!-- Comments -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <hr style="margin-top: 40px; border-top: 1px solid #ccc;">
+            <div id="disqus_thread"></div>
+                <script>
+
+                var disqus_config = function () {
+                this.page.url = "{{ site.url }}";
+                this.page.identifier = "{{ site.url }}_{{ page.title }}";
+                };
+
+                (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://' + "{{ site.disqus_name }}" + '.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </div>
+</div>
