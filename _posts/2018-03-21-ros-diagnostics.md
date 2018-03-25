@@ -27,4 +27,4 @@ From the technical side, all of this is implemented through tasks and analyzers.
 
 ![architecture]({{ "/assets/img/blog" | absolute_url }}/2018-03-21-ros-diagnostics/architecture.png)
 
-So, this is what you get from the ROS diagnostics out of the box: publication of statuses, and categorization of statuses for easy monitoring. Of course, diagnostics is not just about looking at statuses, but also reacting appropriately when certain conditions are met. We'll see examples of how we can do that in the [next post](#).
+So, this is what you get from the ROS diagnostics out of the box: publication of statuses, and categorization of statuses for easy monitoring. Of course, diagnostics is not just about looking at statuses, but also reacting appropriately when certain conditions are met. We'll see examples of how we can do that in the [next post]({{ "/blog/software/ros/2018/03/21/ros-diagnostics/" | prepend: site.baseurl }}).

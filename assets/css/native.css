@@ -79,3 +79,5 @@
 figure.highlight > pre { border-radius: 6px; padding: 12px 17px 12px 15px; }
 figure.highlight pre { border: 0px; }
 .highlight code.language-text { color: #d0d0d0; }
+.highlight code.language-bash { color: #00ff3b; } 
+div.highlight > pre.highlight > code { color: #00ff3b; } 
