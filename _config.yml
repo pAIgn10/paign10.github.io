@@ -25,7 +25,7 @@ collections:
     output: true
     permalink: /project/:categories/:name
 
-gems: 
+plugins: 
   - jekyll-paginate
   - jekyll-feed
   - jekyll-gist
