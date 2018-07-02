@@ -57,7 +57,7 @@ analyzers:
 This yaml file can have 3 parameters:
  * The `pub_rate` which is the frequency at which the aggregator publishes to the /diagnostics_agg topic.
  * The `base_path` (and a secret one, `path`) which adds an additional root level in the hierarchy (e.g. /MyRobot/Sensors/IMU/...). But it's useless, since there can only be one aggregator in the system, and so the separation between different robots cannot happen at this level. Thus, you can simply ignore it!
- * The `analyzers` which is a list of... you guessed it, analyzers. The analyzers have a type, a name (a.k.a. path), and several options for matching criteria. The type can be `GenericAnalyzer` which does a grouping of status items based on their name, or `GroupAnalyzer` which does a categorization of analyzers (e.g. Sensors/IMU, Sensors/GPS).
+ * The `analyzers` which is a list of... you guessed it, analyzers. The analyzers have a type, a name (a.k.a. path), and several options for matching criteria. The type can be `GenericAnalyzer` which does a grouping of status items based on their name or `GroupAnalyzer` which does a categorization of analyzers (e.g. Sensors/IMU, Sensors/GPS).
 
 The above yaml file creates the following hierarchy which can be observed through the robot monitor. The single aggregator constraint is imposed by the robot monitor. If you try to run two aggregators in parallel, the contents of the monitor will keep changing between the messages published by the one aggregator and the other.
 

@@ -47,7 +47,7 @@ rosbag::Recorder recorder(options);
 recorder.run();
 {% endhighlight %}
 
-The options are defined in the `rosbag::RecorderOptions` struct. There is no documentation on these parameters, apart from a short mention to some of them, [here](https://github.com/ros/ros_comm/blob/kinetic-devel/tools/rosbag/src/record.cpp#L50). So, we'll go through them one by one. But before we move forward, I'll have to describe two terms relating to bags, chunk and snapshot.
+The options are defined in the `rosbag::RecorderOptions` struct. There is no documentation on these parameters, apart from a short mention to some of them, [here](https://github.com/ros/ros_comm/blob/kinetic-devel/tools/rosbag/src/record.cpp#L50). So, we'll go through them one by one. But before we move forward, I'll have to describe two terms relating to bags, chunk, and snapshot.
 
 * Messages are written to files in [chunks](http://wiki.ros.org/Bags/Format/2.0). When a message is written to a `rosbag:::Bag`, it is stored in a buffer internally, and when the size of the buffer exceeds a threshold, this chunk of messages is moved to the file.
 * "Triggering a snapshot" means taking all the messages received so far from a buffer and moving them to a bag file. The `rosbag::Bag` is created at the moment of triggering. This means all the messages stay in memory until the last moment, and if you let the recorder run for a long time, it might fill your RAM. So, keep that in mind when using snapshots.<br><br>
@@ -98,11 +98,11 @@ The rest are described as follows:
 * `snapshot`: If false, when the recorder starts, a bag file is created. Then, when a message is received, the message is put in a buffer, a thread is notified, and the thread immediately writes the message to the bag. If snapshot is true, there is no bag and the message stays in the buffer. In this case, the recorder has a subscriber to `snapshot_trigger`. When a message is received to snapshot_trigger, a new buffer is created, and the contents of the old buffer are stored in a bag file.
 * `buffer_size`: The size (in bytes) of the buffer that received messages are stored in. If exceeded, old messages start getting dropped.
 * `chunk_size`: The size (in bytes) of the bag chunks.
-* `split`: If true, messages can be split in multiple bag files.
+* `split`: If true, messages can be split into multiple bag files.
 * `max_splits`: Maximum number of splits.
 * `max_size`: Maximum size of a bag. If exceeded, the recorder terminates, or a new split is created if `split` is true.
 * `max_duration`: Maximum duration of a bag. If exceeded, the recorder terminates, or a new split is created if `split` is true.
-* `min_space`: If the minimum free space (in bytes) on  disk is below this threshold, the recorder terminates.
+* `min_space`: If the minimum free space (in bytes) on disk is below this threshold, the recorder terminates.
 * `min_space_str`: Just a string representation of `min_space`, used when writing logs.
 
 That's it. You bother only with the options you want to modify, give them to the recorder, and let it run. Now, what are some potentials issues or restrictions if you want to use the recorder? I'll just mention a few:

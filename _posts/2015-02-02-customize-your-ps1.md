@@ -19,7 +19,7 @@ Above is what came out of it. Firstly the name of the repository we are in appea
 
 And of course whenever we are outside of a git repository, the prompt "resets" and provides general information again.
 
-This type of customization can extent to whatever other **distinguishable** directory categories you might have. You do that by adding another _elif_ condition within the _if_ statement of `set_ps1`.
+This type of customization can extend to whatever other **distinguishable** directory categories you might have. You do that by adding another _elif_ condition within the _if_ statement of `set_ps1`.
 
 <div  class="tex2jax_ignore">
 {% gist nlamprian/f17caa014177742728a2 .bashrc %}
