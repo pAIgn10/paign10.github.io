@@ -25,21 +25,21 @@ linux /boot/vmlinuz-4.13.0-41-generic root=UUID=36286167-4eba-4a1e-a202-155c6baa
 
 Disabling nouveau is something that you'll have to do every time you boot Ubuntu until you install the Nvidia driver.
 
-Now go ahead and install Ubuntu. At some point, you will be asked whether you want to disable Secure Boot. Agree to it and set a password. You will type this password next time you boot Ubuntu. Wait for the installation to complete, restart the computer and enter the password (you will be prompted). From now on when you start the computer, you'll see a message "Booting in insecure mode". Restart the computer, enter to BIOS, go to the "Security" tab, and hit "Reset Secure Boot variables".
+Now go ahead and install Ubuntu. At some point, you will be asked whether you want to disable Secure Boot. Agree to it and set a password. You will type this password next time you boot Ubuntu. Wait for the installation to complete, restart the computer and enter the password (you will be prompted). From now on when you start the computer, you'll see a message "Booting in insecure mode". Restart the computer, enter to BIOS, go to the "Security" tab, and hit "Enroll all Factory Default Keys".
 
 Restart and hold the "Shift" key, so the grub menu appears. Press E and do the steps for nouveau as described above, and then you can log in Ubuntu as usual. Do any updates you have to do, and then you need to update the Linux kernel. At the time I did this, the installed version was 4.13.0-41, and I upgraded it to 4.15.0-15.
 
 {% highlight bash %}
-~ sudo apt install linux-image-extra-4.15.0-15-generic
-~ sudo apt install linux-headers-4.15.0-15 linux-headers-4.15.0-15-generic
+$ sudo apt install linux-image-extra-4.15.0-15-generic
+$ sudo apt install linux-headers-4.15.0-15 linux-headers-4.15.0-15-generic
 {% endhighlight %}
 
 Now you can install the latest Nvidia driver.
 
 {% highlight bash %}
-~ sudo add-apt-repository ppa:graphics-drivers
-~ sudo apt update
-~ sudo apt install nvidia-396
+$ sudo add-apt-repository ppa:graphics-drivers
+$ sudo apt update
+$ sudo apt install nvidia-396
 {% endhighlight %}
 
 To verify that the installation was successful, you should see the following output by running "nvidia-smi".
@@ -70,17 +70,17 @@ That's it. Now the computer is ready. If interested, keep reading also to instal
 Go to the [Nvidia CUDA Toolkit](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=runfilelocal) page, download and install the runfiles. The Nvidia driver is already installed, so when prompted, select no. You may also choose to install the samples.
 
 {% highlight bash %}
-~ sudo sh cuda_9.2.88_396.26_linux.run
-~ sudo sh cuda_9.2.88.1_linux.run
+$ sudo sh cuda_9.2.88_396.26_linux.run
+$ sudo sh cuda_9.2.88.1_linux.run
 {% endhighlight %}
 
 Update your path variables so you can see the CUDA compiler and libraries.
 
 {% highlight bash %}
-~ echo -e "export PATH=$PATH:/usr/local/cuda-9.2/bin" >> ~/.bashrc
-~ echo -e "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-9.2/lib64" >> ~/.bashrc
-~ source ~/.bashrc
-~ nvcc --version
+$ echo -e "export PATH=$PATH:/usr/local/cuda-9.2/bin" >> ~/.bashrc
+$ echo -e "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-9.2/lib64" >> ~/.bashrc
+$ source ~/.bashrc
+$ nvcc --version
 nvcc: NVIDIA (R) Cuda compiler driver
 Copyright (c) 2005-2018 NVIDIA Corporation
 Built on Wed_Apr_11_23:16:29_CDT_2018
@@ -90,9 +90,9 @@ Cuda compilation tools, release 9.2, V9.2.88
 To verify that CUDA works correctly, you can run one of the provided samples.
 
 {% highlight bash %}
-~ cd ~/NVIDIA_CUDA-9.2_Samples/5_Simulations/smokeParticles
-~ make
-~ ./smokeParticles
+$ cd ~/NVIDIA_CUDA-9.2_Samples/5_Simulations/smokeParticles
+$ make
+$ ./smokeParticles
 {% endhighlight %}
 
 If all is well, you should see a window with a ball flying around. Now you are done. Enjoy this beast of a machine and do your wonders.
