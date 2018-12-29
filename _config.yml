@@ -32,3 +32,4 @@ plugins:
   - classifier-reborn
   - rouge
   - font-awesome-sass
+  - jemoji  # https://github.com/ikatyang/emoji-cheat-sheet

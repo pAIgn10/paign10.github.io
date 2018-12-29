@@ -8,4 +8,5 @@ group :jekyll_plugins do
   gem "classifier-reborn"
   gem "rouge"
   gem "font-awesome-sass"
+  gem "jemoji"
 end
