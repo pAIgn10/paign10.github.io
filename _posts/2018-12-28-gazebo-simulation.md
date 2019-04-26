@@ -68,3 +68,8 @@ There is a ton of information and [tutorials](http://gazebosim.org/tutorials) on
 So this is how I choose to close 2k18... aiming for an adventure through the world of Gazebo, and I'm inviting you to come along for the ride.
 
 See you in the next post where we will see how to create and set up a world for Gazebo.
+
+## Update
+---
+
+Although not the official version, you can also install Gazebo 9 on ROS Kinetic. The process is still simple but a bit more involved as, if you have previously installed `ros-kinetic-desktop-full`, which includes `gazebo7`, you would have to uninstall it and install everything that is installed by desktop-full but gazebo. Then you can go ahead and install the usual gazebo packages shown above, but replacing first any 7s with 9s. The steps are outlined in this medium post, [Setting up ROS Kinetic and Gazebo 8 or 9](https://medium.com/@abhiksingla10/setting-up-ros-kinetic-and-gazebo-8-or-9-70f2231af21a).
