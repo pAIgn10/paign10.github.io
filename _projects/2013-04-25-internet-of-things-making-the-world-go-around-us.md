@@ -23,7 +23,7 @@ The main points of the speech were on:
 
 <hr class="hr-hide">
 <div class="intrinsic-container" style="padding-bottom:80%;">
-<iframe src="//slides.com/paign10/deck-1/embed?style=light" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	<iframe src="//slides.com/nlamprian/deck-1/embed?style=light" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
-The slides are available as [pdf](https://www.dropbox.com/s/u6vgzqo45m8q7oc/Internet%20of%20Things%20Presentation.pdf). You can also find some `notes` on the section of [Internet Analysis](https://www.dropbox.com/s/7syxitfz53gqo57/Internet%20Analysis%20Notes.pdf).
+The slides are available as [pdf](https://drive.google.com/file/d/1fqBFXt7PrcKdIG5SBEk21glCYL7yUlCm/view?usp=sharing). You can also find some `notes` on the section of [Internet Analysis](https://drive.google.com/file/d/1m0UEbROWFFjhLD5-tYVDb9wCX0dlo36N/view?usp=sharing).

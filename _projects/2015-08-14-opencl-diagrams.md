@@ -13,6 +13,6 @@ website: https://github.com/nlamprian/OpenCL-Diagrams
 
 OpenCL-Diagrams provides a set of `LaTeX` documents with figures about OpenCL and parallel algorithms. They are meant to be used in blog posts, tutorials, reports, etc, to enhance the learning process and support the use of OpenCL.
 
-<img src="http://i76.photobucket.com/albums/j16/paign10/img-1_zps7zvp4o7x.png" border="0" alt="hw-model" />
+<img src="https://github.com/nlamprian/OpenCL-Diagrams/raw/master/output/img-1.png" border="0" alt="hw-model" />
 
 The **source code** is available on [GitHub](https://github.com/nlamprian/OpenCL-Diagrams).

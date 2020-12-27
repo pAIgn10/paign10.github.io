@@ -25,6 +25,6 @@ The client communicates with the server through the following **HTTP requests**:
 
 I've also written a **script** on **Linux** that **automates** the turning on and off of the strip with the start and shutdown of the computer during the **night**. It will be available soon.
 
-You can find the **Arduino sketch** on [codebender](https://codebender.cc/sketch:31742) and the **Android app** on [Google Play](https://play.google.com/store/apps/details?id=ln.paign10.arduinopixel). The **source code** is available on [GitHub](https://github.com/pAIgn10/ArduinoPixel).
+You can find the **Arduino sketch** on [codebender](https://codebender.cc/sketch:31742) and the **Android app** on [Google Play](https://play.google.com/store/apps/details?id=ln.paign10.arduinopixel). The **source code** is available on [GitHub](https://github.com/nlamprian/ArduinoPixel).
 
 **[humblehacker](https://codebender.cc/sketch:62851)** at codebender has forked the **Arduino sketch** and adapted it for `Arduino Yun`!

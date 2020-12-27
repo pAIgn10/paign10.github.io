@@ -25,7 +25,7 @@ ya = [0 0 1.5 1.6 1.7 2.1 2.3 1.2];
 {% endhighlight %}
 </div>
 <div class="col-lg-4 col-md-4 col-sm-3">
-<img src="http://i76.photobucket.com/albums/j16/paign10/voronoi-polygon_zps07b37a07.jpg" alt="cut" />
+<img src="https://github.com/nlamprian/Voronoi-Diagrams/wiki/assets/polygon.jpg" alt="polygon" />
 </div>
 </div></p>
 
@@ -56,7 +56,7 @@ The r-limited Voronoi cell are estimated as follows:
 
 <p><div class="row">
 <div class="col-xs-12 col-sm-5 col-sm-push-7">
-<img src="http://i76.photobucket.com/albums/j16/paign10/voronoi-control_zps566eab3e.jpg" alt="voronoi-control" />
+<img src="https://github.com/nlamprian/Voronoi-Diagrams/wiki/assets/control.jpg" alt="control" />
 </div>
 <div class="col-xs-12 col-sm-7 col-sm-pull-5">
 <ol><li>

@@ -37,7 +37,7 @@ Menu:
 9. Exit
 {% endhighlight %}
 
-![flow-diagram](http://i76.photobucket.com/albums/j16/paign10/logging-system-diagram_zpsa745c7b7.png)
+![flow-diagram](https://github.com/nlamprian/Logging-System/wiki/assets/diagram.png)
 
 The application is provided with files that have the number of unique card IDs in the first line, and all the purchase records after that. The records have the following format:
 
@@ -47,10 +47,10 @@ The application is provided with files that have the number of unique card IDs i
 
 Of course, the whole deal with this assignment is how you are gonna arrange the data in memory so that you are able to answer all the questions efficiently. Having defined the data structure, everything else is just a matter of writing some code. The data structure created appears on the following figure.
 
-![data-structure](http://i76.photobucket.com/albums/j16/paign10/DataStructure_zpsb134390a.png)
+![data-structure](https://github.com/nlamprian/Logging-System/wiki/assets/data_structure.png)
 
 That's all. The application is able to load 100.000 records in about a second, and get instant results (sample output below).
 
-<img src="http://i76.photobucket.com/albums/j16/paign10/logging-system-screenshot_zps61e69e85.jpg" style="height:540px;" />
+<img src="https://github.com/nlamprian/Logging-System/wiki/assets/example.jpg" style="height:540px;" />
 
 The source code is available on [GitHub](https://github.com/nlamprian/Logging-System).

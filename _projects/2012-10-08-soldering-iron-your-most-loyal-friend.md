@@ -20,7 +20,7 @@ The main points of the speech were on:
 
 <hr class="hr-hide">
 <div class="intrinsic-container" style="padding-bottom:80%;">
-<iframe src="//slides.com/paign10/deck/embed?style=light" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	<iframe src="//slides.com/nlamprian/deck/embed?style=light" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
-The slides (in Greek) are available as [pdf](https://www.dropbox.com/s/jj3e39cwyfv84iw/Presentation.pdf) and [ppsx](https://www.dropbox.com/s/5t3kayzs498bybd/Presentation.ppsx).
+The slides (in Greek) are available as [pdf](https://drive.google.com/file/d/1SGddLVcn6LVlyKUQKVVVAOU_L3SYAqIz/view?usp=sharing) and [ppsx](https://drive.google.com/file/d/139IbKTywb40yIAydXo__zpPfxx_DahVm/view?usp=sharing).

@@ -19,7 +19,7 @@ website: https://github.com/nlamprian/My-Shiny-Metal-Tooth
 The project is a sign in the form of a <b>tooth</b>, dressed with <b>EL-Wire</b>, and controlled by an <b>Arduino</b>. The Arduino checks the current and sunset time, and if the current time is within an interval from the sunset and a predefined turn off time, the sign turns on. While being on, visual effects are performed, like blinking and fading.
 </div>
 <div class="col-sm-3">
-<img src="http://i76.photobucket.com/albums/j16/paign10/tooth-promo_zpsd4uluetn.jpg" alt=" photo tooth-promo_zpsd4uluetn.jpg" />
+<img src="https://github.com/nlamprian/My-Shiny-Metal-Tooth/wiki/assets/sign.jpg" alt="sign" />
 </div>
 </div></p>
 

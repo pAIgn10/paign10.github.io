@@ -13,7 +13,7 @@ website: https://github.com/nlamprian/Decision-Tree-Learning
 
 This is a lab assignment in the "Artificial Intelligence II" course of the ECE department at the University of Patras, for the academic year 2011 - 2012. It involves building a decision tree on a dataset about the process of providing scholarships for a certain number of attendees to the Hellenic Artificial Intelligence Summer School (HAISS) 2011.
 
-<img src="http://i76.photobucket.com/albums/j16/paign10/decision-tree_zps4264248d.jpg" alt="decision-tree"/>
+<img src="https://github.com/nlamprian/Decision-Tree-Learning/wiki/assets/tree-entropy.jpg" alt="tree entropy" />
 
 The provided dataset is a spreadsheet with the following attributes:
 
